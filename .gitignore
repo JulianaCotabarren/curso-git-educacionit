@@ -3,8 +3,16 @@
 *.text
 
 # Archivos Temporales
+*.temp
+*.tmp
+*.swp
+temp/
+tmp/
+
+
 
 
 # Carpetas excluidas
 logs/
 docs/
+node_modules/
