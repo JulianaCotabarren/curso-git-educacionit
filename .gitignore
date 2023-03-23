@@ -1,0 +1,10 @@
+# Archivos Excluidos
+*.txt
+*.text
+
+# Archivos Temporales
+
+
+# Carpetas excluidas
+logs/
+docs/
