@@ -13,6 +13,15 @@ La configuracion puede definirse en 3 niveles (local, global, system) segun como
 * __git config user.email `email`:__ define un correo de contacto
 * __git config --list:__ muestra la configuracion general
 
+## Gestion de Repositorios
+
+Si necesitamos agregar una direccion de un servidor de GIT, para subir nuestro historial de confirmaciones, o simplemente sincronizar los cambios con dicho remoto, podemos utilizar alguno de los siguientes comandos:
+
+*__git remote add `alias` `url`:__ agrega una direccion remota al repositorio local
+*__git fetch `remote`:__ descarga el historial de confirmaciones del repositorio remoto (no integra los cambios)
+*__git pull `remote` `branch`:__ descarga e integra los cambios del repositorio remoto al working directory
+*__git push `remote` `branch`:__ envia el historial de confirmaciones al repositorio remoto
+
 ---
 ## Contacto
 
