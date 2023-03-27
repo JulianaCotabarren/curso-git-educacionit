@@ -32,7 +32,10 @@
     /* Repositorios */
 
     /* Colaboradores */
-
+    .table{
+        max-width: 720px;
+        margin: auto;
+    }
     /* Formulario Contacto */
 
     /* Redes sociales */
