@@ -36,6 +36,21 @@
         max-width: 720px;
         margin: auto;
     }
+    .table, 
+    .table caption,
+    table th,
+    table td{
+        border: 2px solid #448;
+    }
+    .table caption{
+        border-top: none;
+        border-radius: 0 0 .5rem .5rem;
+    }
+    .table caption,
+    .table thead{
+        color: #eee;
+        background-color: #448;
+    }
     /* Formulario Contacto */
 
     /* Redes sociales */
