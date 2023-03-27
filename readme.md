@@ -21,8 +21,17 @@ Son referencias que permiten al usuario navegar dentro del historial de confirma
 * __BRANCH:__ Apuntador Dinamico que siempre se corresponde con el ultimo commit de la historia actual, sirve como referencia cuando necesitamos ir hacia adelante.
 * __TAG:__ Apuntador Estatico que se corresponde con un commit en concreto y se utiliza para el versionado del proyecto y facilitar la navegacion a ciertos puntos de la historia.
 * __STASH:__ Apuntador de la Zona Temporal de cambios, se utiliza cuando debemos cambiar entre ramas, pero tenemos trabajo en progreso y no amerita un commit, genera una referencia.
+## Gestion de Repositorios
+
+Si necesitamos agregar una direccion de un servidor de GIT, para subir nuestro historial de confirmaciones, o simplemente sincronizar los cambios con dicho remoto, podemos utilizar alguno de los siguientes comandos:
+
+*__git remote add `alias` `url`:__ agrega una direccion remota al repositorio local
+*__git fetch `remote`:__ descarga el historial de confirmaciones del repositorio remoto (no integra los cambios)
+*__git pull `remote` `branch`:__ descarga e integra los cambios del repositorio remoto al working directory
+*__git push `remote` `branch`:__ envia el historial de confirmaciones al repositorio remoto
 
 ---
+
 ## Contacto
 
 Para mas informacion sobre este y otros cursos puede visitar el sitio de [EducacionIT](https://educacionit.com.ar), tambien pueden acceder al material y las grases grabadas desde la plataforma [Alumni](https://alumni.education).
