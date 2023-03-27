@@ -32,6 +32,18 @@ Si necesitamos agregar una direccion de un servidor de GIT, para subir nuestro h
 
 ---
 
+## Colaboradores
+
+Este proyecto fue desarrollado en conjunto con los siguientes colaboradores, los cuales se encargaron de realizar, editar y corregir las areas que se detallan en la siguiente tabla: 
+
+|Colaborador|Area
+|-|-|
+|**Pepe**| ** |
+|**Juan**| ** |
+|**Alex**| ** |
+|**Ana**| ** |
+|**Maria**| ** |
+
 ## Contacto
 
 Para mas informacion sobre este y otros cursos puede visitar el sitio de [EducacionIT](https://educacionit.com.ar), tambien pueden acceder al material y las grases grabadas desde la plataforma [Alumni](https://alumni.education).
