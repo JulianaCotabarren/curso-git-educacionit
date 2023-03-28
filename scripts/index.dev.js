@@ -10,5 +10,9 @@ mapButton = d.querySelector('#footer button.map'),
     mapFrame = d.querySelector('#footer iframe.map'); //Funciones
 
 mapButton.onclick = function () {
-  mapFrame.classList.toggle(className);
+  if (mapFrame.classList.toggle(className)) {
+    mapButton.classList.replace('icon-plus', 'icon-less');
+  } else {
+    mapButton.classList.replace('icon-less', 'icon-plus');
+  }
 }; //Eventos
