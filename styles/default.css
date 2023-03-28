@@ -30,7 +30,22 @@
     /* Mapa de Contacto */
 
     /* Repositorios */
-
+    .repo{
+        padding: 1rem;
+    }
+    .repo a{
+        text-decoration: none;
+        padding: .5rem 1rem;
+        color: #eee;
+        background-color: #333;
+        border-radius: .5rem;
+    }
+    .repo a::before{
+        content: attr(title);
+    }
+    .repo a:hover{
+        background-color: #335;
+    }
     /* Colaboradores */
     .table{
         max-width: 720px;
