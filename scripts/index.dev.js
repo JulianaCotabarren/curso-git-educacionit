@@ -9,7 +9,7 @@ var d = document,
 mapButton = d.querySelector('#footer button.map'),
     mapFrame = d.querySelector('#footer iframe.map'); //Funciones
 
-function toggle(object) {
+var toggle = function toggle(object) {
   var btn = object.btn,
       target = object.target,
       className = object.className,
@@ -20,14 +20,12 @@ function toggle(object) {
   } else {
     btn.classList.replace(classes[1], classes[0]);
   }
-} //Eventos
+}; //Eventos
 
 
-mapButton.onclick = function () {
-  return toggle({
-    btn: mapButton,
-    target: mapFrame,
-    className: className,
-    classes: ['icon-plus', 'icon-less']
-  });
-};
+mapButton.addEventListener('click', toggle({
+  btn: mapButton,
+  target: mapFrame,
+  className: className,
+  classes: ['icon-plus', 'icon-less']
+}));
