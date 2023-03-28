@@ -26,15 +26,44 @@
     /* Control de cambios */
 
 /* Pie de pagina */
-
+    #footer{
+        position: relative;
+        background: linear-gradient(#6668, #3339);
+    }
     /* Mapa de Contacto */
-
+    .cover{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    button.map{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        border: 1px solid #448;
+    }
+    .icon-plus::before{
+        content: '➕';
+    }
+    .icon-less::before{
+        content: '➖';
+    }
+    .map.active,
+    .map.active + .btn{
+        position: fixed;
+        z-index: 2;
+        opacity: .9;
+    }
     /* Repositorios */
 
     /* Colaboradores */
     .table{
         max-width: 720px;
         margin: auto;
+        background-color: #eee;
     }
     .table, 
     .table caption,
