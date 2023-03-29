@@ -72,6 +72,20 @@
                     <li class="list-group-item"><strong>git rm --cached &lt;file> </strong>elimina del repositorio las capturas del archivo seleccionado</li>
                 </ul>
             </article>
+            <article>
+                <h3>Repository (Local/Remote)</h3>
+                <p>
+                    El repositorio corresponde al almacen de confirmaciones, donde se ubican las capturas de codigo confirmadas, en archivos BLOB, identificados con un numero de HASH generado a partir del nombre del autor, correo, cambios realizados, fecha y hora de creacion. Los comandos que vamos a estar utilizando para administrar el repositorio son los siguinetes:
+                </p>
+                <ul class="list-group | m-3">
+                    <li class="list-group-item"><strong>git log: </strong>muestra el historial de confirmaciones</li>
+                    <li class="list-group-item"><strong>git blame &lt;file>: </strong>muestra los autores de cada linea de codigo del archivo seleccionado</li>
+                    <li class="list-group-item"><strong>git remote add &lt;alias> &lt;url>: </strong>agrega una direccion de un repositorio remoto</li>
+                    <li class="list-group-item"><strong>git fetch &lt;remote> </strong>captura el historial de confirmaciones del remoto</li>
+                    <li class="list-group-item"><strong>git pull &lt;remote &lt;branch> </strong>integra los cambios del remoto al Working Directory</li>
+                    <li class="list-group-item"><strong>git push &lt;remote> &lt;branch> </strong>envia el historial de confirmaciones al repositorio remoto</li>
+                </ul>
+            </article>
         </section>
         <!-- Apuntadores de GIT -->
 
