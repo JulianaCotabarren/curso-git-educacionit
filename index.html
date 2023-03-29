@@ -44,46 +44,46 @@
     <!-- Contenido principal -->
     <main>
         <!-- Areas de GIT -->
-        <section>
+        <section class="container d-grid gap-3 p-3">
             <h2>Areas de GIT</h2>
-            <article>
-                <h3>Working Directory</h3>
-                <p>
+            <article class="card">
+                <h3 class="card-header">Working Directory</h3>
+                <p class="card-body">
                     El directorio de trabajo corresponde a la carpeta donde inicializamos el repositorio de GIT. Muy pocas veces vamos a estar utilizando la linea de comandos ya que normalmente corresponde al area en donde se crean, editan y eliminan los archivos. Algunos de los comandos que podemos llegar a utilizar son los siguientes:
                 </p>
-                <ul class="list-group | m-3">
-                    <li class="list-group-item"><strong>dir || ls: </strong>muestra el contenido de la carpeta</li>
-                    <li class="list-group-item"><strong>mkdir &lt;name>: </strong>crea una carpeta con el nombre especificado</li>
-                    <li class="list-group-item"><strong>cd &lt;path>: </strong>abre la carpeta seleccionada</li>
-                    <li class="list-group-item"><strong>git init: </strong>inicializa un repositorio de git</li>
-                    <li class="list-group-item"><strong>rm -rf .git: </strong>elimina el repositorio de git</li>
+                <ul class="card-footer list-group | p-4">
+                    <li class="card-footer list-group-item"><strong>dir || ls: </strong>muestra el contenido de la carpeta</li>
+                    <li class="card-footer list-group-item"><strong>mkdir &lt;name>: </strong>crea una carpeta con el nombre especificado</li>
+                    <li class="card-footer list-group-item"><strong>cd &lt;path>: </strong>abre la carpeta seleccionada</li>
+                    <li class="card-footer list-group-item"><strong>git init: </strong>inicializa un repositorio de git</li>
+                    <li class="card-footer list-group-item"><strong>rm -rf .git: </strong>elimina el repositorio de git</li>
                 </ul>
             </article>
-            <article>
-                <h3>Staging Area (Index)</h3>
-                <p>
+            <article class="card">
+                <h3 class="card-header">Staging Area (Index)</h3>
+                <p class="card-body">
                     El area de control de cambios se utiliza para identificar los archivos a los que vamos a hacerle seguimiento, aqui realizamos las capturas de codigo que luego deberan ser confirmadas para formar parte del historial de confirmaciones. Entre los comandos a utilizar se encuentran:
                 </p>
-                <ul class="list-group | m-3">
-                    <li class="list-group-item"><strong>git status: </strong>muestra el estado de los archivos con respecto al index</li>
-                    <li class="list-group-item"><strong>git add &lt;file>: </strong>realiza la captura (snapshot) de los archivos seleccionados</li>
-                    <li class="list-group-item"><strong>git diff: </strong>compara el Working Directory con el Staging Area</li>
-                    <li class="list-group-item"><strong>git restore --staged &lt;file> </strong>elimina la ultima captura realizada del archivo seleccionado</li>
-                    <li class="list-group-item"><strong>git rm --cached &lt;file> </strong>elimina del repositorio las capturas del archivo seleccionado</li>
+                <ul class="card-footer list-group | p-4">
+                    <li class="card-footer list-group-item"><strong>git status: </strong>muestra el estado de los archivos con respecto al index</li>
+                    <li class="card-footer list-group-item"><strong>git add &lt;file>: </strong>realiza la captura (snapshot) de los archivos seleccionados</li>
+                    <li class="card-footer list-group-item"><strong>git diff: </strong>compara el Working Directory con el Staging Area</li>
+                    <li class="card-footer list-group-item"><strong>git restore --staged &lt;file> </strong>elimina la ultima captura realizada del archivo seleccionado</li>
+                    <li class="card-footer list-group-item"><strong>git rm --cached &lt;file> </strong>elimina del repositorio las capturas del archivo seleccionado</li>
                 </ul>
             </article>
-            <article>
-                <h3>Repository (Local/Remote)</h3>
-                <p>
+            <article class="card">
+                <h3 class="card-header">Repository (Local/Remote)</h3>
+                <p class="card-body">
                     El repositorio corresponde al almacen de confirmaciones, donde se ubican las capturas de codigo confirmadas, en archivos BLOB, identificados con un numero de HASH generado a partir del nombre del autor, correo, cambios realizados, fecha y hora de creacion. Los comandos que vamos a estar utilizando para administrar el repositorio son los siguinetes:
                 </p>
-                <ul class="list-group | m-3">
-                    <li class="list-group-item"><strong>git log: </strong>muestra el historial de confirmaciones</li>
-                    <li class="list-group-item"><strong>git blame &lt;file>: </strong>muestra los autores de cada linea de codigo del archivo seleccionado</li>
-                    <li class="list-group-item"><strong>git remote add &lt;alias> &lt;url>: </strong>agrega una direccion de un repositorio remoto</li>
-                    <li class="list-group-item"><strong>git fetch &lt;remote> </strong>captura el historial de confirmaciones del remoto</li>
-                    <li class="list-group-item"><strong>git pull &lt;remote &lt;branch> </strong>integra los cambios del remoto al Working Directory</li>
-                    <li class="list-group-item"><strong>git push &lt;remote> &lt;branch> </strong>envia el historial de confirmaciones al repositorio remoto</li>
+                <ul class="card-footer list-group | p-4">
+                    <li class="card-footer list-group-item"><strong>git log: </strong>muestra el historial de confirmaciones</li>
+                    <li class="card-footer list-group-item"><strong>git blame &lt;file>: </strong>muestra los autores de cada linea de codigo del archivo seleccionado</li>
+                    <li class="card-footer list-group-item"><strong>git remote add &lt;alias> &lt;url>: </strong>agrega una direccion de un repositorio remoto</li>
+                    <li class="card-footer list-group-item"><strong>git fetch &lt;remote> </strong>captura el historial de confirmaciones del remoto</li>
+                    <li class="card-footer list-group-item"><strong>git pull &lt;remote &lt;branch> </strong>integra los cambios del remoto al Working Directory</li>
+                    <li class="card-footer list-group-item"><strong>git push &lt;remote> &lt;branch> </strong>envia el historial de confirmaciones al repositorio remoto</li>
                 </ul>
             </article>
         </section>
